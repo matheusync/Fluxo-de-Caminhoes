@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #cceabb;
+  font-family: Arial, sans-serif;
+}
+ .menu-container, .gameover-container, .pause-container {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+}
+.menu-title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  z-index: 11;
+  text-align: center;
+}
+
+.menu-title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  z-index: 10;
+}
+
+.menu-title h1 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+}
+
+.menu-title p {
+  margin: 0;
+  font-size: 16px;
+  color: #4CAF50;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+/* Botão: Iniciar Jogo → Verde (ação, positividade, início) */
+button:contains("Iniciar Jogo") {
+  background-color: #28a745;
+}
+
+/* Botão: Referências → Azul (conhecimento, confiança) */
+button:contains("Referências do Projeto") {
+  background-color: #007bff;
+}
+
+/* Botão: Prompts → Roxo (criatividade, ideias) */
+button:contains("Prompts") {
+  background-color: #6f42c1;
+}
+
+/* Botão: Voltar ao Menu → Cinza escuro (neutro, retorno) */
+button:contains("Voltar ao Menu") {
+  background-color: #6c757d;
+}
+
+/* Botão: Reiniciar → Laranja (energia, recomeço) */
+button:contains("Reiniciar") {
+  background-color: #fd7e14;
+}
+
+
+.references-container {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.references-container {
+  max-height: 85vh; /* Altura máxima de 85% da tela */
+  overflow-y: auto; /* Ativa scroll vertical */
+  width: 90vw;      /* Largura máxima visível */
+  max-width: 800px; /* Limite para telas grandes */
+}
+
+.faq-section {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2f4858;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.faq-question {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 10px auto;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  max-width: 700px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.faq-section {
+  background-color: #f9f9f9;
+  border-left: 6px solid #17a2b8;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.faq-question {
+  transition: transform 0.2s ease-in-out;
+}
+
+.faq-question:hover {
+  transform: scale(1.03);
+  background-color: #e9f7ff;
+}
+
+.faq-question {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 10px auto;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  max-width: 700px;
+  color: #333;
+  line-height: 1.4;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.faq-question:hover {
+  background-color: #e3f2fd;
+  white-space: normal;
+}
+
+.faq-wrapper {
+  margin: 10px auto;
+  max-width: 700px;
+  text-align: left;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+.faq-question {
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 6px;
+  font-weight: normal;
+  color: #333;
+  font-size: 15px;
+}
+
+.faq-wrapper:hover .faq-answer {
+  display: block;
+}
+
+.faq-wrapper:hover {
+  background-color: #e3f2fd;
+}
+
